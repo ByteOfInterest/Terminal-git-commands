@@ -7,3 +7,5 @@ A command to check the state of the working directory and the staging area.
 To add all file contents to the index.
 - git commit -m 
 To add comment about the changes
+- git push origin 'branch name'
+To push the changes to the directory
