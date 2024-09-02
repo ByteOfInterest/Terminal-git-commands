@@ -1,5 +1,9 @@
-# Terminal-git-commands
-Here I keep the list of terminal commands that I often use
+# Cheatsheet Git commands
+Git is a version control tool that is essential for working with DS/CS in the real world. It helps you to track your work, exeriment with changes and collaborate with others easily. So, here's the ***list of terminal commands*** that are often used in the projects.
+
+**Installing Git**
+Navigate to the latest Git installer and download *the latest* version.
+https://git-scm.com/downloads
 
 - git status
 A command to check the state of the working directory and the staging area.
