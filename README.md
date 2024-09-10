@@ -8,6 +8,10 @@ Navigate to the latest [Git installer](https://git-scm.com/downloads) and downlo
 ```
 git --version
 ```
+To create a folder
+```
+mkdir 'folder name'
+```
 
 - git status
 A command to check the state of the working directory and the staging area.
