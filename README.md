@@ -21,3 +21,4 @@ To add all file contents to the index.
 To add comment about the changes
 - git push origin 'branch name'
 To push the changes to the directory
+- git clone <link to your repository>
