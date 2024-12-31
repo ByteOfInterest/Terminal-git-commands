@@ -13,12 +13,50 @@ To create a folder
 mkdir 'folder name'
 ```
 
-- git status
-A command to check the state of the working directory and the staging area.
-- git add .
-To add all file contents to the index.
-- git commit -m 
-To add comment about the changes
-- git push origin 'branch name'
-To push the changes to the directory
-- git clone <link to your repository>
+**Setup and Configuration**
+Set your name for commits
+```
+git config --global user.name "Your Name"
+```
+Set your email for commits (same email as you used for GitHub)
+```
+git config --global user.email "youremail@example.com"
+```
+Show all Git configurations
+```
+git config --list
+```
+**Starting a Repository**
+Initialize a new Git repository
+```
+git init
+```
+Clone an existing repository
+```
+git clone <repository-url>
+```
+**Basic Workflow**
+Check the status of your repository
+```
+git status
+```
+Stage all changes in the currect directory
+```
+git add .
+```
+Or stage a specific file
+```
+git add <file>
+```
+Commit changes with a message
+```
+git commit -m "Commit messsage"
+```
+Push changes to the remote repository
+```
+git push origin <branch name>
+```
+Fetch and merge changes from the remote repository
+```
+git pull origin <branch name>
+```
