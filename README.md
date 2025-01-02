@@ -141,3 +141,86 @@ Remove a specific stash entry
 ```
 git stash drop
 ```
+**Tagging**
+> Used to mark specific points in your repository's history as
+> being important, usually for releases or significant milestones.
+Create a new tag
+```
+git tag <tag-name>
+```
+List all tags
+```
+git tag
+```
+Show details of a specific tag
+```
+git show <tag-name>
+```
+**Miscellaneous**
+Remove untracked files
+```
+git clean -f
+```
+Apply a specific commit to the current branch
+```
+git cherry-pick <commit>
+```
+Show who modified each line of a file
+```
+git blame <file>
+```
+---
+**Steps to Make a File Untraceable Using .gitignore**
+1. Create or Edit a .gitignore File
+ - If a .gitignore file doesn't exist in your repository, create one at the root of your project:
+ ```
+ touch .gitignore
+ ```
+2. Add the File or Pattern to .gitignore
+ - For example, if your keys file is named keys.txt, add this line to .gitignore:
+ ```
+ keys.txt
+ ```
+ - To ignore all the files in a directory (e.g., config/), use:
+ ```
+ config/
+ ```
+ - For more complex patterns, you can use wildcards:
+ ```
+ *.key      # Ignore all files with .key extension
+ secrets/*  # Ignore all files in the secrets folder
+ ```
+3. Remove the File from Git Tracking
+ - If the file is already tracked by Git, you need to untrack it:
+ ```
+ git rm --cached keys.txt
+ ```
+ - This removes the file from Git's index but leaves it in your working directory.
+4. Commit the Changes
+ - After updating .gitignore, commit your changes:
+ ```
+ git add .gitignore
+ git commit -m "Update .gitignore to ignore sensitive files"
+ ```
+**Example .gitignore for Keys or Sensitive Files**
+```
+# Ignore API keys and sensitive files
+keys.txt
+*.key
+.env
+secrets/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules and build files (for Node.js projects)
+node_modules/
+dist/
+```
+---
+**Additional Tips**
+- Avoid Committing .gitignore with Secrets: _Double-check that your sensitive files were never pushed to the repository before using .gitignore_
+- Use Environment Variables: _For added security, store sensitive data in environment variables rather than in files_
+---
+These practices help maintain the security and integrity of your project while using Git effectively
