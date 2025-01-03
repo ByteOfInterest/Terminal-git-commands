@@ -156,6 +156,10 @@ Show details of a specific tag
 ```
 git show <tag-name>
 ```
+> Can be used for:
+- Versioning Your Releases (e.g., v1.0.0, v2.1.3)
+- Marking Important Points in History (launch, of a feature, deployment of a production-ready build, bugfix versions)
+
 **Miscellaneous**
 Remove untracked files
 ```
