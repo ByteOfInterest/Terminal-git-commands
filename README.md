@@ -228,3 +228,10 @@ dist/
 - Use Environment Variables: _For added security, store sensitive data in environment variables rather than in files_
 ---
 These practices help maintain the security and integrity of your project while using Git effectively
+---
+**Git Commands for Team Collaboration**
+1. Hadling Code Reviews
+Fetch a pull request from GitHub for local testing
+```
+git fetch origin <branch-name>
+```
