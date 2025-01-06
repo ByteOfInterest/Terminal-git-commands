@@ -90,6 +90,10 @@ Show a concise commit history
 ```
 git log --oneline
 ```
+or
+```
+git log --oneline --graph
+```
 View unstaged changes
 ```
 git diff
@@ -140,6 +144,10 @@ git stash apply
 Remove a specific stash entry
 ```
 git stash drop
+```
+Reapply stashed changes and remove them from the stash list
+```
+git stash pop
 ```
 **Tagging**
 > Used to mark specific points in your repository's history as
@@ -235,3 +243,18 @@ Fetch a pull request from GitHub for local testing
 ```
 git fetch origin <branch-name>
 ```
+2. Merging Changes
+Merge another branch into the current branch
+```
+git merge <branch-name>
+```
+3. Cleaning Up
+Delete a branch after merging 
+```
+git branch -d <branch-name>
+```
+Remove references to deleted remote branches
+```
+git remote prune origin
+```
+**Advice for Working in a Team**
