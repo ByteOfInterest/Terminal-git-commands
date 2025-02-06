@@ -14,7 +14,7 @@ mkdir 'folder name'
 ```
 
 **Setup and Configuration**
-Set your name for commits
+Set your name for commits (same user name as for GitHub)
 ```
 git config --global user.name "Your Name"
 ```
@@ -67,7 +67,11 @@ git branch
 ```
 Create a new branch
 ```
-git branch <bramch-name>
+git branch <new-branch-name>
+```
+or create a new branch and switch to it in one step
+```
+git checkout -b <new-branch-name>
 ```
 Switch to a specific branch
 ```
@@ -80,6 +84,18 @@ git checkout -b <branch-name>
 Merge a branch into the current branch
 ```
 git merge <branch-name>
+```
+Delete a branch locally
+```
+git branch -d <branch-name>
+```
+If the branch has unmerged changes, to delete it - force delete it
+```
+git branch -D <branch-name>
+```
+Delete a branch remotely
+```
+git push origin --delete <branch-name>
 ```
 **Viewing Changes**
 Show the commit history
