@@ -275,7 +275,7 @@ git remote prune origin
 ```
 **Advice for Working in a Team**
 1. Use Descriptive Commit Messages
-Write clear and concise messages to describe whaat you changed and why.
+Write clear and concise messages to describe what you changed and why.
 2. Pull Before You Push
 To avoid conflicts
 3. Keep You Branches Small and Focused
